@@ -8,14 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var count = 0
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        Home()
+        //always light Theme
+            .preferredColorScheme(.light)
     }
 }
 

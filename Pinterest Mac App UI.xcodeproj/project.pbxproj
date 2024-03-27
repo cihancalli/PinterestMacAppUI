@@ -12,6 +12,12 @@
 		1A4EB3782BB4CF9C005E21C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4EB3772BB4CF9C005E21C7 /* Assets.xcassets */; };
 		1A4EB37B2BB4CF9C005E21C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4EB37A2BB4CF9C005E21C7 /* Preview Assets.xcassets */; };
 		1A4EB3832BB4D139005E21C7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1A4EB3822BB4D139005E21C7 /* README.md */; };
+		1A4EB3862BB4D43D005E21C7 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1A4EB3852BB4D43D005E21C7 /* SDWebImageSwiftUI */; };
+		1A4EB38C2BB4D4A6005E21C7 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4EB38B2BB4D4A6005E21C7 /* ImageViewModel.swift */; };
+		1A4EB38E2BB4D4BE005E21C7 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4EB38D2BB4D4BE005E21C7 /* ImageModel.swift */; };
+		1A4EB3902BB4D56B005E21C7 /* BlurWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4EB38F2BB4D56B005E21C7 /* BlurWindow.swift */; };
+		1A4EB3922BB4D578005E21C7 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4EB3912BB4D578005E21C7 /* TabButton.swift */; };
+		1A4EB3942BB4D585005E21C7 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4EB3932BB4D585005E21C7 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,11 @@
 		1A4EB37A2BB4CF9C005E21C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1A4EB37C2BB4CF9C005E21C7 /* Pinterest_Mac_App_UI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pinterest_Mac_App_UI.entitlements; sourceTree = "<group>"; };
 		1A4EB3822BB4D139005E21C7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1A4EB38B2BB4D4A6005E21C7 /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
+		1A4EB38D2BB4D4BE005E21C7 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		1A4EB38F2BB4D56B005E21C7 /* BlurWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurWindow.swift; sourceTree = "<group>"; };
+		1A4EB3912BB4D578005E21C7 /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
+		1A4EB3932BB4D585005E21C7 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A4EB3862BB4D43D005E21C7 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,8 +67,10 @@
 		1A4EB3722BB4CF9C005E21C7 /* Pinterest Mac App UI */ = {
 			isa = PBXGroup;
 			children = (
-				1A4EB3732BB4CF9C005E21C7 /* Pinterest_Mac_App_UIApp.swift */,
-				1A4EB3752BB4CF9C005E21C7 /* ContentView.swift */,
+				1A4EB38A2BB4D480005E21C7 /* App */,
+				1A4EB3872BB4D459005E21C7 /* ViewModel */,
+				1A4EB3882BB4D463005E21C7 /* Model */,
+				1A4EB3892BB4D473005E21C7 /* View */,
 				1A4EB3772BB4CF9C005E21C7 /* Assets.xcassets */,
 				1A4EB37C2BB4CF9C005E21C7 /* Pinterest_Mac_App_UI.entitlements */,
 				1A4EB3792BB4CF9C005E21C7 /* Preview Content */,
@@ -70,6 +84,41 @@
 				1A4EB37A2BB4CF9C005E21C7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1A4EB3872BB4D459005E21C7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1A4EB38B2BB4D4A6005E21C7 /* ImageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1A4EB3882BB4D463005E21C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A4EB38D2BB4D4BE005E21C7 /* ImageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1A4EB3892BB4D473005E21C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1A4EB3752BB4CF9C005E21C7 /* ContentView.swift */,
+				1A4EB38F2BB4D56B005E21C7 /* BlurWindow.swift */,
+				1A4EB3932BB4D585005E21C7 /* Home.swift */,
+				1A4EB3912BB4D578005E21C7 /* TabButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1A4EB38A2BB4D480005E21C7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1A4EB3732BB4CF9C005E21C7 /* Pinterest_Mac_App_UIApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -88,6 +137,9 @@
 			dependencies = (
 			);
 			name = "Pinterest Mac App UI";
+			packageProductDependencies = (
+				1A4EB3852BB4D43D005E21C7 /* SDWebImageSwiftUI */,
+			);
 			productName = "Pinterest Mac App UI";
 			productReference = 1A4EB3702BB4CF9C005E21C7 /* Pinterest Mac App UI.app */;
 			productType = "com.apple.product-type.application";
@@ -116,6 +168,9 @@
 				Base,
 			);
 			mainGroup = 1A4EB3672BB4CF9C005E21C7;
+			packageReferences = (
+				1A4EB3842BB4D43D005E21C7 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 1A4EB3712BB4CF9C005E21C7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -143,8 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A4EB3902BB4D56B005E21C7 /* BlurWindow.swift in Sources */,
+				1A4EB38C2BB4D4A6005E21C7 /* ImageViewModel.swift in Sources */,
 				1A4EB3762BB4CF9C005E21C7 /* ContentView.swift in Sources */,
+				1A4EB3922BB4D578005E21C7 /* TabButton.swift in Sources */,
 				1A4EB3742BB4CF9C005E21C7 /* Pinterest_Mac_App_UIApp.swift in Sources */,
+				1A4EB38E2BB4D4BE005E21C7 /* ImageModel.swift in Sources */,
+				1A4EB3942BB4D585005E21C7 /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +343,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -310,6 +371,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -345,6 +407,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1A4EB3842BB4D43D005E21C7 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1A4EB3852BB4D43D005E21C7 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A4EB3842BB4D43D005E21C7 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1A4EB3682BB4CF9C005E21C7 /* Project object */;
 }
